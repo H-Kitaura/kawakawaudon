@@ -6,6 +6,8 @@ import Menu from './Components/Menu';
 import News from './Components/News';
 import Title from './Components/Title';
 import Top from './Components/Top';
+import Footer from './Components/Footer';
+
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
      <Menu />
      <Access />
      <Content />
+     <Footer />
     </>
   );
 }

@@ -1,21 +1,34 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 
 const Top = () => {
   return (
-    <div className="m-0">ここにトップ画像が入ります
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>画像１</SwiperSlide>
-      <SwiperSlide>画像２</SwiperSlide>
-      <SwiperSlide>画像３</SwiperSlide>
-    </Swiper>
+    <div>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+      >
+        <SwiperSlide>
+          <img src="logo512.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="logo192.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="logo512.png" alt="" />
+        </SwiperSlide>
+      </Swiper>
     </div>
   )
 }
