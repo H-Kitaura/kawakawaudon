@@ -20,10 +20,10 @@ const Top = () => {
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-          <img src="logo512.png" alt="" />
+          <img src="kawakawa-gaikan.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="logo192.png" alt="" />
+        <img src="naisou.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
         <img src="logo512.png" alt="" />

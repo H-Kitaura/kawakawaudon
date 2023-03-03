@@ -7,6 +7,7 @@ import News from './Components/News';
 import Title from './Components/Title';
 import Top from './Components/Top';
 import Footer from './Components/Footer';
+import Manuel from './Manuel';
 
 
 
@@ -17,6 +18,7 @@ function App() {
      <Top />
      <News />
      <About />
+     <Manuel />
      <Menu />
      <Access />
      <Content />
